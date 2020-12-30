@@ -47,7 +47,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding: 10% 0;
+  padding: 20px 0;
 
   h2 {
     font-size: 24px;
@@ -91,6 +91,14 @@ export default {
     &:hover {
       background-color: darken($primary-color, 17%);
     }
+  }
+
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: 992px) {
+    padding: 95px 0;
   }
 }
 </style>
