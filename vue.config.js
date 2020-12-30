@@ -1,4 +1,9 @@
 module.exports = {
+  publicPath:
+    process.env.NODE_ENV === 'production'
+      ? '/front-end-technical-exercise-assets/'
+      : '/',
+
   lintOnSave: false,
 
   chainWebpack: config => {
