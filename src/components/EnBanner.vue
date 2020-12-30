@@ -61,6 +61,7 @@ export default {
     font-weight: 300;
     line-height: 65px;
     letter-spacing: 0.01em;
+    margin: 36px 0;
   }
 
   p {
@@ -69,7 +70,7 @@ export default {
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0.01em;
-    margin: 0 0 36px;
+    margin-bottom: 36px;
   }
 
   .btn-start {

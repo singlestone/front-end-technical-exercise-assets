@@ -2,7 +2,7 @@
   <div class="app">
     <en-header />
     <en-banner />
-    <en-callouts :steps="latestSteps" />
+    <en-callouts :steps="serializedSteps" />
   </div>
 </template>
 
@@ -30,7 +30,7 @@ export default {
   },
 
   computed: {
-    latestSteps() {
+    serializedSteps() {
       return serializeSteps(this.rawSteps)
     }
   },
