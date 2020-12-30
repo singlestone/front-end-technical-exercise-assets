@@ -88,7 +88,8 @@ export default {
     text-transform: uppercase;
     transition: background-color 1s ease;
 
-    &:hover {
+    &:hover,
+    &:active {
       background-color: darken($primary-color, 17%);
     }
   }
