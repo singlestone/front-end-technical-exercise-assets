@@ -13,17 +13,16 @@ describe('serializeSteps()', () => {
   })
 
   it('finds the latest version for each step', () => {
-    expect(serializedSteps[0].latestVersion.effectiveDate).toBe(
-      '2019-05-20T03:04:05.000Z'
-    )
-    expect(serializedSteps[1].latestVersion.effectiveDate).toBe(
-      '2019-05-04T03:04:05.000Z'
-    )
-    expect(serializedSteps[2].latestVersion.effectiveDate).toBe(
-      '2019-04-04T05:04:05.000Z'
-    )
-    expect(serializedSteps[3].latestVersion.effectiveDate).toBe(
-      '2019-05-20T03:04:05.000Z'
-    )
+    expect(serializedSteps[0].effectiveDate).toBe('2019-05-20T03:04:05.000Z')
+    expect(serializedSteps[1].effectiveDate).toBe('2019-05-04T03:04:05.000Z')
+    expect(serializedSteps[2].effectiveDate).toBe('2019-04-04T05:04:05.000Z')
+    expect(serializedSteps[3].effectiveDate).toBe('2019-05-20T03:04:05.000Z')
+  })
+
+  it('does not include extraneous data in the result array', () => {
+    expect(serializedSteps[0]).not.toHaveProperty('versionContent')
+    expect(serializedSteps[1]).not.toHaveProperty('versionContent')
+    expect(serializedSteps[2]).not.toHaveProperty('versionContent')
+    expect(serializedSteps[3]).not.toHaveProperty('versionContent')
   })
 })

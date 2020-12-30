@@ -8,7 +8,8 @@ export const serializeSteps = steps =>
       )
 
       return {
-        ...step,
-        latestVersion: step.versionContent[0]
+        id: step.id,
+        stepNumber: step.stepNumber,
+        ...step.versionContent[0]
       }
     })

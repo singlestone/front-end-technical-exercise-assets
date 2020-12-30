@@ -7,8 +7,8 @@
         <div v-for="step in steps" :key="step.id" class="step">
           <div class="step-number">{{ step.stepNumber.padStart(2, '0') }}</div>
 
-          <div class="step-title">{{ step.latestVersion.title }}</div>
-          <div class="step-body">{{ step.latestVersion.body }}</div>
+          <div class="step-title">{{ step.title }}</div>
+          <div class="step-body">{{ step.body }}</div>
         </div>
       </div>
     </div>
