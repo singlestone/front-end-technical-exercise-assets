@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <en-header />
     <en-banner />
     <en-callouts />
@@ -20,3 +20,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+</style>

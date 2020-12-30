@@ -1,13 +1,16 @@
+@import 'variables';
+
 html,
 body {
   font-family: 'Lato', sans-serif;
-  background: #f2f1ef;
+  background: $bg-color;
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
 .container {
+  box-sizing: border-box;
   width: 1130px;
   max-width: 100%;
   margin: 0 auto;

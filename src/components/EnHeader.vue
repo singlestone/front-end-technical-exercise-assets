@@ -18,6 +18,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
+
 .header {
   display: flex;
   align-items: center;
@@ -26,7 +28,7 @@ export default {
 
   .logo {
     height: 21px;
-    fill: #50e3c2;
+    fill: $primary-color;
   }
 }
 </style>
