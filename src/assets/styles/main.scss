@@ -1,4 +1,15 @@
 html,
 body {
   font-family: 'Lato', sans-serif;
+  background: #f2f1ef;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  width: 1130px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
 }
