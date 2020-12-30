@@ -1,17 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <en-header />
+    <en-banner />
+    <en-callouts />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import EnHeader from './components/EnHeader'
+import EnBanner from './components/EnBanner'
+import EnCallouts from './components/EnCallouts'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    EnHeader,
+    EnBanner,
+    EnCallouts
   }
 }
 </script>
